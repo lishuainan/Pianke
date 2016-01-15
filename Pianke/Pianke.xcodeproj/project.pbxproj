@@ -99,7 +99,10 @@
 		9D0E52B81C4775E100E8E6D7 /* PKLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52B71C4775E100E8E6D7 /* PKLeftMenuViewController.m */; };
 		9D0E52BC1C47768E00E8E6D7 /* PKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52BB1C47768E00E8E6D7 /* PKHomeViewController.m */; };
 		9D0E52C01C477CEA00E8E6D7 /* PKLeftHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52BF1C477CEA00E8E6D7 /* PKLeftHeadView.m */; };
-		9D0E52C31C47A13800E8E6D7 /* PKLeftTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52C21C47A13800E8E6D7 /* PKLeftTableView.m */; };
+		9D0E52C51C47C48C00E8E6D7 /* PKList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D0E52C41C47C48C00E8E6D7 /* PKList.plist */; };
+		9D0E52D01C48914C00E8E6D7 /* PKLeftTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52CF1C48914C00E8E6D7 /* PKLeftTableView.m */; };
+		9D0E52D31C48918700E8E6D7 /* PKLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52D21C48918700E8E6D7 /* PKLeftTableViewCell.m */; };
+		9D0E52D61C48962C00E8E6D7 /* PKLeftMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E52D51C48962C00E8E6D7 /* PKLeftMusicView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -305,8 +308,13 @@
 		9D0E52BB1C47768E00E8E6D7 /* PKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKHomeViewController.m; sourceTree = "<group>"; };
 		9D0E52BE1C477CEA00E8E6D7 /* PKLeftHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLeftHeadView.h; sourceTree = "<group>"; };
 		9D0E52BF1C477CEA00E8E6D7 /* PKLeftHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftHeadView.m; sourceTree = "<group>"; };
-		9D0E52C11C47A13800E8E6D7 /* PKLeftTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKLeftTableView.h; path = View/PKLeftTableView.h; sourceTree = "<group>"; };
-		9D0E52C21C47A13800E8E6D7 /* PKLeftTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PKLeftTableView.m; path = View/PKLeftTableView.m; sourceTree = "<group>"; };
+		9D0E52C41C47C48C00E8E6D7 /* PKList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PKList.plist; sourceTree = "<group>"; };
+		9D0E52CE1C48914C00E8E6D7 /* PKLeftTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLeftTableView.h; sourceTree = "<group>"; };
+		9D0E52CF1C48914C00E8E6D7 /* PKLeftTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftTableView.m; sourceTree = "<group>"; };
+		9D0E52D11C48918700E8E6D7 /* PKLeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLeftTableViewCell.h; sourceTree = "<group>"; };
+		9D0E52D21C48918700E8E6D7 /* PKLeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftTableViewCell.m; sourceTree = "<group>"; };
+		9D0E52D41C48962C00E8E6D7 /* PKLeftMusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLeftMusicView.h; sourceTree = "<group>"; };
+		9D0E52D51C48962C00E8E6D7 /* PKLeftMusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLeftMusicView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				9D0E51981C47490100E8E6D7 /* Info.plist */,
+				9D0E52C41C47C48C00E8E6D7 /* PKList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -695,9 +704,9 @@
 		9D0E52B51C47750800E8E6D7 /* 左侧菜单 */ = {
 			isa = PBXGroup;
 			children = (
-				9D0E52B61C4775E100E8E6D7 /* PKLeftMenuViewController.h */,
-				9D0E52B71C4775E100E8E6D7 /* PKLeftMenuViewController.m */,
+				9D0E52CA1C47C68F00E8E6D7 /* Controller */,
 				9D0E52BD1C477CA100E8E6D7 /* View */,
+				9D0E52C91C47C66F00E8E6D7 /* Model */,
 			);
 			name = "左侧菜单";
 			sourceTree = "<group>";
@@ -716,10 +725,30 @@
 			children = (
 				9D0E52BE1C477CEA00E8E6D7 /* PKLeftHeadView.h */,
 				9D0E52BF1C477CEA00E8E6D7 /* PKLeftHeadView.m */,
-				9D0E52C11C47A13800E8E6D7 /* PKLeftTableView.h */,
-				9D0E52C21C47A13800E8E6D7 /* PKLeftTableView.m */,
+				9D0E52CE1C48914C00E8E6D7 /* PKLeftTableView.h */,
+				9D0E52CF1C48914C00E8E6D7 /* PKLeftTableView.m */,
+				9D0E52D11C48918700E8E6D7 /* PKLeftTableViewCell.h */,
+				9D0E52D21C48918700E8E6D7 /* PKLeftTableViewCell.m */,
+				9D0E52D41C48962C00E8E6D7 /* PKLeftMusicView.h */,
+				9D0E52D51C48962C00E8E6D7 /* PKLeftMusicView.m */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		9D0E52C91C47C66F00E8E6D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9D0E52CA1C47C68F00E8E6D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D0E52B61C4775E100E8E6D7 /* PKLeftMenuViewController.h */,
+				9D0E52B71C4775E100E8E6D7 /* PKLeftMenuViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -813,6 +842,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0E52C51C47C48C00E8E6D7 /* PKList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,7 +866,7 @@
 				9D0E527E1C47494100E8E6D7 /* UIRefreshControl+AFNetworking.m in Sources */,
 				9D0E52A01C47494100E8E6D7 /* UIScrollView+MJRefresh.m in Sources */,
 				9D0E52741C47494100E8E6D7 /* AFURLConnectionOperation.m in Sources */,
-				9D0E52C31C47A13800E8E6D7 /* PKLeftTableView.m in Sources */,
+				9D0E52D01C48914C00E8E6D7 /* PKLeftTableView.m in Sources */,
 				9D0E52A81C47494100E8E6D7 /* SDWebImageCompat.m in Sources */,
 				9D0E528E1C47494100E8E6D7 /* MJRefreshAutoGifFooter.m in Sources */,
 				9D0E52981C47494100E8E6D7 /* MJChiBaoZiFooter2.m in Sources */,
@@ -844,6 +874,7 @@
 				9D0E52B41C47494100E8E6D7 /* UIView+WebCacheOperation.m in Sources */,
 				9D0E52A91C47494100E8E6D7 /* SDWebImageDecoder.m in Sources */,
 				9D0E52891C47494100E8E6D7 /* MJRefreshAutoFooter.m in Sources */,
+				9D0E52D31C48918700E8E6D7 /* PKLeftTableViewCell.m in Sources */,
 				9D0E526E1C47494100E8E6D7 /* AFDownloadRequestOperation.m in Sources */,
 				9D0E52821C47494100E8E6D7 /* MASConstraintMaker.m in Sources */,
 				9D0E52BC1C47768E00E8E6D7 /* PKHomeViewController.m in Sources */,
@@ -896,6 +927,7 @@
 				9D0E52B81C4775E100E8E6D7 /* PKLeftMenuViewController.m in Sources */,
 				9D0E526C1C47494100E8E6D7 /* ZJPNavigationController.m in Sources */,
 				9D0E526D1C47494100E8E6D7 /* PKBaseViewController.m in Sources */,
+				9D0E52D61C48962C00E8E6D7 /* PKLeftMusicView.m in Sources */,
 				9D0E52751C47494100E8E6D7 /* AFURLRequestSerialization.m in Sources */,
 				9D0E52831C47494100E8E6D7 /* MASLayoutConstraint.m in Sources */,
 				9D0E52AA1C47494100E8E6D7 /* SDWebImageDownloader.m in Sources */,
@@ -1105,6 +1137,7 @@
 				9D0E519F1C47490100E8E6D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D0E51A01C47490100E8E6D7 /* Build configuration list for PBXNativeTarget "PiankeTests" */ = {
 			isa = XCConfigurationList;
@@ -1113,6 +1146,7 @@
 				9D0E51A21C47490100E8E6D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
